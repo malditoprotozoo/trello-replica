@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trello</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div id="container">
+		<nav>
+			<h1>Trello</h1>
+			<ul id="login">
+				<li>Login</li>
+				<li>Sign Up</li>
+			</ul>
+		</nav>
+		
+		<!-- En este espacio estarán los tableros -->
+		<section id="boards">
+			<!-- Este div cambiará cuando se le haga clic -->
+			<div id="add-list"><span>Añadir una lista...</span></div>
+			<!-- Esta forma estará invisible hasta que el usuario haga clic sobre #add-list -->
+			<form id="main-board" class="invisible">
+				<input type="text" placeholder="Añadir una lista..." id="input">
+			</form>
+		</section>
+		
+	</div>
+
+	<script src="assets/js/app.js"></script>
+	
+</body>
+</html>
