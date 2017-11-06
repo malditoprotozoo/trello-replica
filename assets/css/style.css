@@ -28,3 +28,7 @@ ul#login {
 #boards {
 	padding-top: 50px;
 }
+
+.invisible {
+	display: none;
+}
