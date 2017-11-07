@@ -19,6 +19,13 @@ nav {
 	background-color: #755286;
 }
 
+/* Automáticamente, el input, los botones y otras etiquetas no recibirán la fuente elegida en body.
+Para cambiar esto, determinamos que la fuente siempre debería ser heredada. */
+
+input, select, textarea, button {
+	font-family: inherit;
+}
+
 
 #logo {
 	position: absolute;
@@ -48,6 +55,7 @@ nav {
 	padding: 5px;
 	transition: 0.5s all;
 	transition-delay: 0.1s;
+	border-radius: 5px;
 }
 
 #add-list:hover {
@@ -56,21 +64,28 @@ nav {
 	cursor: pointer;
 }
 
-/* .invisible {
+.invisible {
 	display: none;
-} */
+}
 
 #main-board {
 	width: 280px;
+	height: 100px;
+	background-color: #E2E4E6;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 5px;
+	margin-top: -5px;
 }
 
 #main-board input {
 	width: 270px;
-	font-family: "Open Sans", sans-serif;
+	height: 40px;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 #main-board button {
-	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
 }
 
@@ -86,6 +101,7 @@ nav {
 	padding: 6px 20px;
 	transition: 0.5s all;
 	transition-delay: 0.1s;
+	margin-top: 10px;
 }
 
 .button:hover {
@@ -98,4 +114,6 @@ nav {
 	background-color: transparent;
 	border: none;
 	color: #999;
+	font-size: 20px;
+	margin-left: 20px;
 }

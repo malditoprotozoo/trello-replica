@@ -5,6 +5,7 @@
 	<title>Trello</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts/icomoon/style.css">
 </head>
 <body>
 
@@ -19,9 +20,9 @@
 			<div id="add-list" onclick="transforms()"><span>Añadir una lista...</span></div>
 			<!-- Esta forma estará invisible hasta que el usuario haga clic sobre #add-list -->
 			<form id="main-board" class="invisible">
-				<input type="text" placeholder="Añadir una tarjeta..." id="items">
+				<input type="text" placeholder="Añadir una lista..." id="items">
 				<button type="submit" id="add" class="button">Guardar</button>
-				<button type="button" id="close" class="closing-button">X</button>
+				<button type="button" id="close" class="closing-button"><span class="icon-close"></span></button>
 			</form>
 		</section>
 		
