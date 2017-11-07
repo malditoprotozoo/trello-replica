@@ -68,9 +68,14 @@ input, select, textarea, button {
 	display: none;
 }
 
+.visible {
+	display: inline-block;
+}
+
 #main-board {
 	width: 280px;
-	height: 100px;
+	min-height: 100px;
+	max-height: 100%;
 	background-color: #E2E4E6;
 	text-align: center;
 	padding-top: 10px;
@@ -78,15 +83,11 @@ input, select, textarea, button {
 	margin-top: -5px;
 }
 
-#main-board input {
-	width: 270px;
+input {
+	width: 260px;
 	height: 40px;
 	padding: 5px;
 	border-radius: 5px;
-}
-
-#main-board button {
-	font-weight: 700;
 }
 
 .button {
@@ -102,6 +103,8 @@ input, select, textarea, button {
 	transition: 0.5s all;
 	transition-delay: 0.1s;
 	margin-top: 10px;
+	margin-bottom: 15px;
+	font-weight: 700;
 }
 
 .button:hover {
@@ -116,4 +119,31 @@ input, select, textarea, button {
 	color: #999;
 	font-size: 20px;
 	margin-left: 20px;
+}
+
+.item {
+	background-color: #E2E4E6;
+	width: 250px;
+	color: gray;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+ul {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.new-board {
+	width: 280px;
+	min-height: 100px;
+	max-height: 100%;
+	background-color: #E2E4E6;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 5px;
+	margin-top: -3px;
+	margin-bottom: 30px;
+	float: left;
+	margin-right: 30px;
 }

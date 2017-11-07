@@ -18,10 +18,12 @@
 		<section id="boards">
 			<!-- Este div cambiará cuando se le haga clic -->
 			<div id="add-list" onclick="transforms()"><span>Añadir una lista...</span></div>
+			
 			<!-- Esta forma estará invisible hasta que el usuario haga clic sobre #add-list -->
 			<form id="main-board" class="invisible">
-				<input type="text" placeholder="Añadir una lista..." id="items">
-				<button type="submit" id="add" class="button">Guardar</button>
+				<!-- <ul id="todo-list"></ul> -->
+				<input type="text" placeholder="Añadir una lista..." id="title-list">
+				<button type="submit" id="save" class="button">Guardar</button>
 				<button type="button" id="close" class="closing-button"><span class="icon-close"></span></button>
 			</form>
 		</section>
