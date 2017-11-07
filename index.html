@@ -4,26 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Trello</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
 
 	<div id="container">
 		<nav>
-			<h1>Trello</h1>
-			<ul id="login">
-				<li>Login</li>
-				<li>Sign Up</li>
-			</ul>
+			<img src="assets/images/header-logo.png" alt="" id="logo">
 		</nav>
 		
 		<!-- En este espacio estarán los tableros -->
 		<section id="boards">
 			<!-- Este div cambiará cuando se le haga clic -->
-			<div id="add-list"><span onclick="transforms()">Añadir una tarjeta...</span></div>
+			<div id="add-list" onclick="transforms()"><span>Añadir una lista...</span></div>
 			<!-- Esta forma estará invisible hasta que el usuario haga clic sobre #add-list -->
 			<form id="main-board" class="invisible">
 				<input type="text" placeholder="Añadir una tarjeta..." id="items">
-				<button type="submit" id="add" class="button">Añadir</button>
+				<button type="submit" id="add" class="button">Guardar</button>
 				<button type="button" id="close" class="closing-button">X</button>
 			</form>
 		</section>
