@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Trello</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="assets/fonts/icomoon/style.css">
-</head>
-<body>
-
-	<div id="container">
-		<nav>
-			<img src="assets/images/header-logo.png" alt="" id="logo">
-		</nav>
-		
-		<!-- En este espacio estarán los tableros -->
-		<section id="boards">
-			<!-- Este div cambiará cuando se le haga clic -->
-			<div id="add-list" onclick="transforms()"><span>Añadir una lista...</span></div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Trello</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+	</head>
+	<body>
+		<div id="container">
+			<nav>
+				<img src="assets/images/header-logo.png" alt="" id="logo">
+			</nav>
 			
-			<!-- Esta forma estará invisible hasta que el usuario haga clic sobre #add-list -->
-			<form id="main-board" class="invisible">
-				<!-- <ul id="todo-list"></ul> -->
-				<input type="text" placeholder="Añadir una lista..." id="title-list">
-				<button type="submit" id="save" class="button">Guardar</button>
-				<button type="button" id="close" class="closing-button"><span class="icon-close"></span></button>
-			</form>
-		</section>
+			<!-- En este espacio estarán los tableros -->
+			<section id="boards">
+				<!-- Este div cambiará cuando se le haga clic -->
+				<div id="add-list" onclick="transforms()"><span>Añadir una lista...</span></div>
+				
+				<!-- Esta forma estará invisible hasta que el usuario haga clic sobre #add-list -->
+				<form id="main-board" class="invisible">
+					<!-- <ul id="todo-list"></ul> -->
+					<input type="text" placeholder="Añadir una lista..." id="title-list">
+					<button type="submit" id="save" class="button">Guardar</button>
+					<button type="button" id="close" class="closing-button"><span class="icon-close"></span></button>
+				</form>
+			</section>
+			
+		</div>
+		<script src="assets/js/app.js"></script>
 		
-	</div>
-
-	<script src="assets/js/app.js"></script>
-	
-</body>
+	</body>
 </html>
