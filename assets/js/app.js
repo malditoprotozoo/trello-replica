@@ -18,6 +18,7 @@ function formAppears() {
 	addList.classList.add("invisible");
 	mainBoard.classList.remove("invisible");
 	mainBoard.classList.add("visible");
+	addList.classList.remove("visible");
 	buttonSave.addEventListener("click", saveNewList);
 	buttonClose.addEventListener("click", close);
 };
