@@ -148,3 +148,12 @@ function addItem() {
         board.appendChild(contentItem);
     }
 };
+
+// Función para que la estrella se vuelva amarilla al clickearla
+
+function yellowStar() {
+
+	var star = document.getElementById("star");
+	star.classList.toggle("yellow")
+};
+

@@ -11,13 +11,18 @@
 	<body>
 		<div id="container">
 			<nav>
+				<div id="tab"><span class="icon-trello"></span><span>Tableros</span></div>
+				<span class="wrapper"><input type="text" name="search" placeholder="" id="nav-search"></span>
 				<img src="assets/images/header-logo.png" alt="" id="logo">
 			</nav>
+
+			<section id="titles">
+				<span><a href="#boards">Tablero</a></span>
+				<span class="icon-star-o white" id="star" onclick="yellowStar()"></span>
+			</section>
 			
 			<!-- En este espacio estarán los tableros -->
-			<section id="boards">
-				<!-- Este div cambiará cuando se le haga clic -->
-				<div id="add-list" onclick="transforms()"><span>Añadir una lista...</span></div>
+			<section id="boards">				
 				
 				<!-- Esta forma estará invisible hasta que el usuario haga clic sobre #add-list -->
 				<form id="main-board" class="invisible">
@@ -26,6 +31,10 @@
 					<button type="submit" id="save" class="button">Guardar</button>
 					<button type="button" id="close" class="closing-button"><span class="icon-close"></span></button>
 				</form>
+				
+				<!-- Este div cambiará cuando se le haga clic -->
+				<div id="add-list" onclick="transforms()"><span>Añadir una lista...</span></div>
+
 			</section>
 			
 		</div>
