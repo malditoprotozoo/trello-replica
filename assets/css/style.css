@@ -127,16 +127,15 @@ input {
 }
 
 .item {
-	background-color: #E2E4E6;
-	width: 250px;
-	color: gray;
-	padding: 8px;
+	background-color: white;
+	width: 95%;
+	color: #4D4D4D;
+	padding: 7px;
 	border-radius: 3px;
-}
-
-ul {
-	list-style-type: none;
-	margin-bottom: 10px;
+	text-align: left;
+	word-wrap: break-word;
+	margin-bottom: 7px;
+	margin-left: 5.5px;
 }
 
 .new-board {
@@ -171,6 +170,7 @@ ul {
 
 .new-board input:hover {
 	background-color: #9B9B9B;
+	cursor: pointer;
 }
 
 .new-board input:hover::placeholder {
