@@ -165,11 +165,17 @@ por el contenido de cada una, así que lo saqué */
 }
 
 .invisible {
+	opacity: 0;
+	visibility: hidden;
 	display: none;
+	transition: all .3s linear;
 }
 
 .visible {
+	opacity: 1;
+	visibility: visible;
 	display: inline-block;
+	transition: all .3s linear;
 }
 
 #main-board {

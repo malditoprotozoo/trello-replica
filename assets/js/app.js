@@ -1,12 +1,25 @@
 // Estableciendo variables
 
+var pageContainer = document.getElementById("container");
 var boards = document.getElementById("boards");
 var addList = document.getElementById("add-list");
 var mainBoard = document.getElementById("main-board");
+var titleList = document.getElementById("title-list");
 var buttonSave = document.getElementById("save");
 var buttonClose = document.getElementById("close");
 var toDoList = document.getElementById("todo-list");
 var buttonAdd = document.getElementById("add");
+
+// Para que cuando se haga click en la ventana, #main-board vuelva a esconderse
+
+window.addEventListener("mouseup", function(event) {
+    if (event.target !== mainBoard && event.target !== titleList && event.target !== buttonSave) {
+        mainBoard.classList.add("invisible");
+        mainBoard.classList.remove("visible");
+        addList.classList.add("visible");
+        addList.classList.remove("invisible");
+    }
+});
 
 // Función que remplazará #add-list por #main-board
 addList.addEventListener("click", function() {
@@ -114,3 +127,4 @@ function yellowStar() {
     var star = document.getElementById("star");
     star.classList.toggle("yellow")
 };
+
