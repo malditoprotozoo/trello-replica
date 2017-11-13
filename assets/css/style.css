@@ -132,10 +132,13 @@ input, select, textarea, button {
 abajo, pero al aplicarlo, las listas iban creciendo en conjunto en lugar de guiarse
 por el contenido de cada una, así que lo saqué */
 
+/* Display inline-flex hacía el truco, pero me gusta como quedó sin eso xD */
+
 #boards {
 	/* display: flex;
 	float: left; */
 	/* white-space: nowrap; */
+	/* display: inline-flex; */
 	margin-top: 10px;
 	margin-left: 20px;
 	margin-right: 0px;
